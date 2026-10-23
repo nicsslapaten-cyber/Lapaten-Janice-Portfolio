@@ -1,9 +1,8 @@
-
 .profile {
   display: block;
   margin: 0 auto;
   border-radius: 50%;
-  border: 3px double rgb(60, 13, 13);
+  border: 3px double rgb(91, 59, 59);
   width: 100px;
   height: 100px;
   object-fit: cover;
@@ -12,32 +11,55 @@
 }
 
 body {
-  
   border-radius: 15px;
   margin: 0;
   padding: 40px;
-  background-color: #f8f9fa;
+  background-color: #9faab3;
   font-family: Georgia, serif;
   text-align: center;
 }
 
+.navbar {
+  background-color: rgb(77, 61, 91);
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.navbar a {
+  color: rgb(250, 249, 249);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: Georgia, serif;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: rgb(212, 160, 23);
+  text-decoration: underline;
+}
+
 h1 {
-  color: rgb(31, 7, 52);
+  color: rgb(243, 242, 244);
   text-align: center;
   text-decoration: underline;
-  text-decoration-color: rgb(83, 13, 13);
+  text-decoration-color: rgb(121, 57, 57);
 }
 
 p {
   text-align: center;
   font-style: italic;
   text-indent: 0%;
-  color: blue;
+  color: rgb(244, 244, 248);
 }
 
 h2 {
-  color: black;
-  text-align: center;
+  color: rgb(243, 246, 243);
+  text-align: center; 
   font-size: 30px;
 }
 
@@ -51,20 +73,31 @@ form {
   font-style: italic;
 }
 
-.cardslot {
-  display: grid;
-  place-items: center;
-  width: 100%;
-  border-top: 1px dashed salmon;
-  border-bottom: 1px dashed salmon;
-  padding: 15px 0;
-  margin: 20px 0;
+form input, form textarea {
+  margin: 5px 0 15px 0;
+  padding: 8px;
+  width: 80%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  background-color: rgb(252, 250, 253);
+  color: rgb(116, 61, 61);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 .cardslot h1 {
-  color: black;
+  color: rgb(74, 67, 67);
   text-decoration: underline;
-  margin: 0;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  
 }
 
 .team-container {
@@ -72,21 +105,16 @@ form {
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
-  width: 100%;
+  margin-bottom: 30px;
 }
 
 .team-card {
   width: 330px;
   height: 300px;
-  background-color: white;
-  border: 1px solid #ccc; 
+  background-color: rgb(129, 89, 89);
+  border: 1px solid #b48383; 
   border-radius: 10px;
-  box-shadow: 5px 8px 15px rgba(0, 0, 0, 0.2);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box; 
+  justify-content: center; 
 }
 
 .team-card img {
@@ -96,18 +124,25 @@ form {
   border-radius: 50%;
   border: 4px solid green;
   margin-bottom: 5px;
+  margin-top: 10px;
 } 
 
 .team-card h2,
 .team-card h3,
 .team-card h4{
   font-size: 20px;
-  color: black;
+  color: rgb(141, 162, 209);
   margin: 5px 0;
 }
 
 .team-card p {
   font-size: 14px;
-  color:darkred;
+  color: darkred;
   margin: 3px 0;
+}
+
+footer {
+  margin-top: 40px;
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
 }
